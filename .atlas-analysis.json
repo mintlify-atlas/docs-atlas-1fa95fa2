@@ -1,0 +1,102 @@
+{
+  "projectType": "api-service",
+  "projectName": "Parts Catalog",
+  "projectDescription": "A web application for managing a parts catalog with vehicle relationships, built with Spring Boot and Vue.js",
+  "theme": "mint",
+  "primaryColor": "#df7e38",
+  "lightColor": "#667e93",
+  "darkColor": "#ced0d3",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Setup",
+            "pages": [
+              "setup/backend",
+              "setup/frontend",
+              "setup/database"
+            ]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "architecture/overview",
+              "architecture/data-model",
+              "architecture/components"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Parts",
+            "pages": [
+              "api/parts/overview",
+              "api/parts/create",
+              "api/parts/list",
+              "api/parts/get",
+              "api/parts/update",
+              "api/parts/delete"
+            ]
+          },
+          {
+            "group": "Vehicles",
+            "pages": [
+              "api/vehicles/overview",
+              "api/vehicles/create",
+              "api/vehicles/list",
+              "api/vehicles/get",
+              "api/vehicles/update",
+              "api/vehicles/delete"
+            ]
+          },
+          {
+            "group": "Relationships",
+            "pages": [
+              "api/relationships/overview",
+              "api/relationships/list-vehicles",
+              "api/relationships/add-vehicle",
+              "api/relationships/remove-vehicle"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "CRUD operations for parts and vehicles",
+    "Many-to-many relationships between parts and vehicles",
+    "Search and filter functionality",
+    "RESTful API with Swagger documentation",
+    "Vue.js frontend with Bootstrap UI",
+    "Unit testing with JUnit and H2 database"
+  ],
+  "publicApiSurface": [
+    "GET /api/v1/parts",
+    "POST /api/v1/parts",
+    "GET /api/v1/parts/:id",
+    "PUT /api/v1/parts/:id",
+    "DELETE /api/v1/parts/:id",
+    "DELETE /api/v1/parts",
+    "GET /api/v1/vehicles",
+    "POST /api/v1/vehicles",
+    "GET /api/v1/vehicles/:id",
+    "PUT /api/v1/vehicles/:id",
+    "DELETE /api/v1/vehicles/:id",
+    "DELETE /api/v1/vehicles",
+    "GET /api/v1/parts/:partId/vehicles",
+    "POST /api/v1/parts/:partId/vehicles/:vehicleId",
+    "DELETE /api/v1/parts/:partId/vehicles/:vehicleId"
+  ]
+}
